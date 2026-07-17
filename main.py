@@ -144,7 +144,7 @@ for i, f in enumerate(fs):
 report = mne.Report(title='ICA Fitting Report (Epochs)')
 report.add_ica(ica, 'ICA Decomposition', inst=epo)
 report_path = os.path.join('out_report', 'report_ica.html')
-report.save(report_path, overwrite=True)
+report.save(report_path, overwrite=True, verbose=False)
 print(f'Report saved to {report_path}')
 
 # == CREATE PRODUCT.JSON ==
